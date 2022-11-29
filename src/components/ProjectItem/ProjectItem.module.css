@@ -1,0 +1,213 @@
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    height: 25vh;
+    padding: 20px;
+    font-size: 26px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: var(--color-dark);
+    font-weight: 700;
+    border: 3px solid var(--color-primary);
+    transition: 0.1s ease-in;
+    -webkit-box-shadow: 7px 7px 0px 0px var(--color-shadow-primary);
+    -moz-box-shadow: 7px 7px 0px 0px var(--color-shadow-primary);
+    box-shadow: 7px 7px 0px 0px var(--color-shadow-primary);
+    position: relative;
+    z-index: 6;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 100%;
+    font-size: 26px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: var(--color-dark);
+    font-weight: 700;
+}
+.title:hover {
+    transform: translateY(-3px);
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -2;
+    opacity: 0.4;
+    transition: 0.3s ease-in;
+}
+
+
+.edit_button {
+    position: absolute;
+    top: 4px;
+    right: 35px;
+    cursor: pointer;
+    z-index: 25;
+}
+
+.edit_icon {
+    width: 23px;
+    height: 23px;
+}
+
+.edit_icon:hover {
+    transform: scaley(1.25) scalex(1.25);
+}
+
+.delete_button {
+    position: absolute;
+    top: 4px;
+    right: 9px;
+    cursor: pointer;
+}
+
+.delete_icon {
+    width: 22px;
+    height: 22px;
+}
+
+.delete_icon:hover {
+    transform: scaley(1.25) scalex(1.25);
+}
+
+.input_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    color: var(--color-white);
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: none;
+}
+
+.input:focus {
+    outline: 3px solid var(--color-secondary);
+}
+
+.file_input {
+    display: none;
+}
+
+.file_label {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 3px solid var(--color-secondary);
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.25s ease-in;
+    cursor: pointer;
+}
+
+.file_label:hover {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.button_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.apply_button, .cancel_button {
+    width: 45%;
+    font-size: 18px;
+    padding: 4px;
+    color: var(--color-white);
+    text-transform: capitalize;
+    border: 3px solid var(--color-secondary);
+    font-weight: 400;
+    background-color: var(--color-secondary);
+    letter-spacing: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.25s ease-in;
+}
+.apply_button:hover {
+    transform:translateY(3px)
+}
+.cancel_button {
+    background-color: var(--color-error);
+    border: none;
+}
+.cancel_button:hover {
+    transform:translateY(3px)
+}
+@media (max-width: 1024px) {
+    .apply_button, .cancel_button {
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .section {
+        height: 160px;
+        width: 30%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .label {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .input {
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+    .file_label {
+        padding: 3px;
+        font-size: 13px;
+    }
+    .apply_button, .cancel_button {
+        width: 48%;
+        font-size: 12px;
+    }
+    .edit_button {
+        right: 28px;
+    }
+    .edit_icon {
+        width: 17px;
+        height: 17px;
+    }
+    .delete_icon {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+
+@media (max-width: 530px) {
+    .section {
+        width: 47%;
+    }
+    .title {
+        font-size: 16px;
+        text-align: center;
+    }
+}

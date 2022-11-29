@@ -1,0 +1,96 @@
+.section {
+    position: fixed;
+    width: 100%;
+    padding: 5px 0;
+    background-color: var(--color-primary);
+    z-index: 5;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    letter-spacing: 5px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.heading:hover {
+    transform: translateY(-2px);
+}
+
+.info_wrapper {
+    display: flex;
+}
+
+.sign_button {
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sign_button:hover {
+    color: var(--color-white);
+}
+
+.language_button {
+    padding-left: 10px;
+    color: var(--color-secondary);
+    font-weight: 500;
+    font-size: 20px;
+    border-left: 3px solid var(--color-white);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.language_button:hover {
+    color: var(--color-white);
+}
+
+.email {
+    margin-top: 4px;
+    margin-right: 14px;
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+.logout {
+    margin-top: 2px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.logout_icon {
+    width: 17px;
+    height: 17px;
+    transition: 0.2s;
+}
+
+.logout_icon:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 460px) {
+    .email {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .heading {
+        font-size: 18px;
+    }
+
+    .sign_button {
+        font-size: 16px;
+    }
+
+    .language_button {
+        font-size: 16px;
+    }
+}
