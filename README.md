@@ -6,7 +6,7 @@ Server - https://github.com/miliereya/uptrade-server
 
 # Fix
 
-Auth refresh is no working on hosting while it's working in local
+Strange queries behavior on deployed app (local app working correctly)
 
 # Realized Features
 
