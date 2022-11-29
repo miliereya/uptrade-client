@@ -1,5 +1,6 @@
 # Full-stack todolist
 
+Deployed - https://uptrade-todolist.herokuapp.com
 Server - https://github.com/miliereya/uptrade-server
 
 # Realized Features
