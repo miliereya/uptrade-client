@@ -1,12 +1,10 @@
 # Full-stack todolist
 
+(Warning! Sometimes heroku apps don't upload immediatly, so you we'll need to reload the page)
 Deployed - https://uptrade-todolist.herokuapp.com
 
 Server - https://github.com/miliereya/uptrade-server
 
-# Fix
-
-Strange queries behavior on deployed app (local app working correctly)
 
 # Realized Features
 
