@@ -11,7 +11,6 @@ interface ConvertToHoursResult {
 
 export const convertToHours = (val: number, movedToDevelopment: Date | undefined): ConvertToHoursResult => {
     if (movedToDevelopment) {
-        console.log(movedToDevelopment)
         val = val + new Date().getTime() - new Date(movedToDevelopment).getTime()
     }
 
