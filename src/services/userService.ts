@@ -1,3 +1,4 @@
+import { NavigateFunction } from "react-router";
 import { Dispatch } from "redux";
 import { instance } from '.';
 import { GlobalActionTypes } from '../models/actions/GLobalActionModel';
@@ -34,6 +35,7 @@ export const userService = {
                 ...props
             })
             localStorage.setItem('access_token', response.data.accessToken)
+            window.location.reload()
             dispatch({ type: UserActionTypes.SET_USER, payload: response.data.user })
             dispatch({ type: GlobalActionTypes.SET_AUTH_POPUP_CLOSED })
         } catch (e: any) {
@@ -59,7 +61,7 @@ export const userService = {
             dispatch({ type: GlobalActionTypes.SET_LOADING_FALSE })
         }
     },
-    async refresh(dispatch: Dispatch) {
+    async refresh(dispatch: Dispatch, nav: NavigateFunction) {
         try {
             dispatch({ type: GlobalActionTypes.SET_LOADING_TRUE })
             dispatch({ type: UserActionTypes.SET_ERROR, payload: null })
@@ -67,7 +69,7 @@ export const userService = {
             localStorage.setItem('access_token', response.data.accessToken)
             dispatch({ type: UserActionTypes.SET_USER, payload: response.data.user })
         } catch (e: any) {
-
+            nav('/')
         } finally {
             dispatch({ type: GlobalActionTypes.SET_LOADING_FALSE })
         }

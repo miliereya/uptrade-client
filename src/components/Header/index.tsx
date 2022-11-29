@@ -6,7 +6,7 @@ import { GlobalActionTypes } from '../../models/actions/GLobalActionModel'
 import s from './Header.module.css'
 import logoutIcon from '../../images/icons/logout.png'
 import { userService } from '../../services/userService'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 export const Header = () => {
     const { language } = useTypedSelector(state => state.global)
@@ -14,6 +14,7 @@ export const Header = () => {
 
     const dispatch = useDispatch()
 
+    const nav = useNavigate()
     const languageHandler = () => {
         if (language.mark === 'en') {
             dispatch({ type: GlobalActionTypes.SET_LANGUAGE, payload: ru })
@@ -24,8 +25,10 @@ export const Header = () => {
         }
     }
 
-    const logoutHandler = () => {
-        userService.logout(dispatch)
+    const logoutHandler = async () => {
+        await userService.logout(dispatch)
+        nav('/')
+        window.location.reload()
     }
 
     return (
