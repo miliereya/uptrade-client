@@ -35,3 +35,7 @@ Tasks:
 Project:
 
   - Work with files
+
+# Bugs
+
+  - Can't create project after registration, can't get storaged access token (now working with reloading page after registration)
