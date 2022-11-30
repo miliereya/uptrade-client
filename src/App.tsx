@@ -1,5 +1,5 @@
 import { Header } from "./components/Header";
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import { ProjectPage } from "./pages/ProjectPage";
 import { ChooseProjectPage } from "./pages/ChooseProjectPage";
 import { AuthPopup } from "./components/AuthPopup";
@@ -12,9 +12,10 @@ import { useDispatch } from "react-redux";
 function App() {
   const { authPopupToogle, isLoading } = useTypedSelector(state => state.global)
   const dispatch = useDispatch()
+  const nav = useNavigate()
 
   useEffect(() => {
-    userService.refresh(dispatch)
+    userService.refresh(dispatch, nav)
   }, [])
 
   return (
