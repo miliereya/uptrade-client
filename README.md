@@ -19,7 +19,8 @@ Tasks:
   - Development time
   - Expiration date
   - Subtasks
-	
+  - Cascade comments
+
 Column:
 
   - Column filter
@@ -30,7 +31,6 @@ Column:
 Tasks:
 
   - Work with files
-  - Cascade comments
 	
 Project:
 
