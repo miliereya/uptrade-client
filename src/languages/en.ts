@@ -76,6 +76,17 @@ export const en: ILanguage = {
     column: {
         sort_by: 'Sort',
         order_by: 'Order'
+    },
+    comments: {
+        comments: 'Comments',
+        add_comment: 'Add comment',
+        enter_your_comment: 'Enter your comment...',
+        by: 'By',
+        more: 'more',
+        reply: 'reply',
+        cancel: 'cancel',
+        send: 'send',
+        delete: 'delete',
+        hide: 'hide'
     }
-
 }

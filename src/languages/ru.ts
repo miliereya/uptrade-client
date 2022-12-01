@@ -75,7 +75,18 @@ export const ru: ILanguage = {
     column: {
         sort_by: 'Сорт.',
         order_by: 'Пор.'
+    },
+    comments: {
+        comments: 'Комментарии',
+        add_comment: 'Добавить комментарий',
+        enter_your_comment: 'Введите комментарий...',
+        by: 'От',
+        more: 'еще',
+        reply: 'ответить',
+        cancel: 'отменить',
+        send: 'отправить',
+        delete: 'удалить',
+        hide: 'скрыть'
     }
 
-    
 }

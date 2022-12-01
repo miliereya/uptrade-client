@@ -22,16 +22,25 @@
     transition: 0.25s;
 }
 
+.comments_button {
+    margin-right: 9px;
+}
+
 .delete_button {
     margin-left: 7px;
 }
 
-.delete_button:hover {
+.delete_button:hover,
+.edit_button:hover,
+.comments_button:hover {
     transform: translateY(-2px);
 }
 
-.edit_button:hover {
-    transform: translateY(-2px);
+
+.comments_icon {
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
 }
 
 .edit_icon {

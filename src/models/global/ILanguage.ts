@@ -81,4 +81,17 @@ export interface ILanguage {
         sort_by: string
         order_by: string
     }
+
+    comments: {
+        comments: string
+        add_comment: string
+        enter_your_comment: string
+        by: string
+        send: string
+        more: string
+        reply: string
+        cancel: string
+        delete: string
+        hide: string
+    }
 }

@@ -13,6 +13,7 @@ export interface ITask {
     files: []
     dateDone?: Date
     movedToDevelopment?: Date
+    comments: string[]
     subtasks: ISubTasks[]
     createdAt: Date
     updatedAt: Date
