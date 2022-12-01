@@ -1,9 +1,9 @@
-import { FullsizePopup } from '../UI/popups/FullsizePopup'
+import { FullsizePopup } from '../../UI/popups/FullsizePopup'
 import s from './AddTaskPopup.module.css'
 import { FC, Dispatch, SetStateAction, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { useTypedSelector } from '../../hooks/useTypedSelector'
-import { taskService } from '../../services/taskService'
+import { useTypedSelector } from '../../../hooks/useTypedSelector'
+import { taskService } from '../../../services/taskService'
 
 interface AddTaskPopupProps {
     setPopupToogle: Dispatch<SetStateAction<boolean>>

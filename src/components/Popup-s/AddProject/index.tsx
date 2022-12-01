@@ -1,8 +1,8 @@
-import { FullsizePopup } from '../UI/popups/FullsizePopup'
+import { FullsizePopup } from '../../UI/popups/FullsizePopup'
 import s from './AddProjectPopup.module.css'
 import { useState, FC, Dispatch, SetStateAction } from 'react'
-import { useTypedSelector } from '../../hooks/useTypedSelector'
-import { projectService } from '../../services/projectService'
+import { useTypedSelector } from '../../../hooks/useTypedSelector'
+import { projectService } from '../../../services/projectService'
 import { useDispatch } from 'react-redux'
 
 interface AddProjectPopupProps {

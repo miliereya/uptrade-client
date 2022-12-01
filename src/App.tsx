@@ -2,7 +2,7 @@ import { Header } from "./components/Header";
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import { ProjectPage } from "./pages/ProjectPage";
 import { ChooseProjectPage } from "./pages/ChooseProjectPage";
-import { AuthPopup } from "./components/AuthPopup";
+import { AuthPopup } from "./components/Popup-s/Auth";
 import { useTypedSelector } from "./hooks/useTypedSelector";
 import { PageSpinner } from "./components/UI/loaders/spinner";
 import { useEffect } from 'react'

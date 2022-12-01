@@ -1,7 +1,7 @@
 import { AddProjectButton } from '../../components/UI/buttons/AddProjectButton'
 import s from './ChooseProjectPage.module.css'
 import { useState } from 'react'
-import { AddProjectPopup } from '../../components/AddProjectPopup'
+import { AddProjectPopup } from '../../components/Popup-s/AddProject'
 import { ProjectItem } from '../../components/ProjectItem'
 import { useTypedSelector } from '../../hooks/useTypedSelector'
 import { useDispatch } from 'react-redux'

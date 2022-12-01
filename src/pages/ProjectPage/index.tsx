@@ -7,8 +7,8 @@ import { projectService } from '../../services/projectService'
 import { formatDate } from '../../utils/date'
 import { sortTasksByColumns } from '../../utils/sort'
 import { Columns } from '../../components/Columns'
-import { AddTaskPopup } from '../../components/AddTaskPopup'
-import { TaskPopup } from '../../components/TaskPopup'
+import { AddTaskPopup } from '../../components/Popup-s/AddTask'
+import { TaskPopup } from '../../components/Popup-s/TaskItem'
 import { TaskSearch } from '../../components/TaskSearch'
 
 export const ProjectPage = () => {

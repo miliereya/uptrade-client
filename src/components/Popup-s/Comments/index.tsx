@@ -1,13 +1,12 @@
-import { useTypedSelector } from "../../hooks/useTypedSelector"
-import { FullsizePopup } from "../UI/popups/FullsizePopup"
+import { useTypedSelector } from "../../../hooks/useTypedSelector"
+import { FullsizePopup } from "../../UI/popups/FullsizePopup"
 import s from './CommentsPopup.module.css'
 import { FC, Dispatch, useState, SetStateAction, useEffect } from 'react'
-import { CreateCommentRequest } from "../../models/request/CreateComment"
-import { commentsService } from "../../services/commentsService"
+import { CreateCommentRequest } from "../../../models/request/CreateComment"
+import { commentsService } from "../../../services/commentsService"
 import { useDispatch } from "react-redux"
-import { IComment } from "../../models/IComment"
-import { CommentItem } from "../CommentItem"
-import { ProjectActionTypes } from "../../models/actions/ProjectActionModel"
+import { IComment } from "../../../models/IComment"
+import { CommentItem } from "../../CommentItem"
 
 interface CommentsPopupProps {
     commentPopupToolgle: Dispatch<SetStateAction<boolean>>

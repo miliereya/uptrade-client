@@ -1,11 +1,11 @@
 import { useDispatch } from 'react-redux'
-import { useTypedSelector } from '../../hooks/useTypedSelector'
-import { GlobalActionTypes } from '../../models/actions/GLobalActionModel'
-import { FullsizePopup } from '../UI/popups/FullsizePopup'
+import { useTypedSelector } from '../../../hooks/useTypedSelector'
+import { GlobalActionTypes } from '../../../models/actions/GLobalActionModel'
+import { FullsizePopup } from '../../UI/popups/FullsizePopup'
 import s from './AuthPopup.module.css'
 import { useState } from 'react'
-import { UserActionTypes } from '../../models/actions/UserActionModel'
-import { userService } from '../../services/userService'
+import { UserActionTypes } from '../../../models/actions/UserActionModel'
+import { userService } from '../../../services/userService'
 
 export const AuthPopup = () => {
     const { language } = useTypedSelector(state => state.global)
