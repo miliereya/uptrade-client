@@ -1,7 +1,8 @@
 # Full-stack todolist
 
-Warning! Sometimes heroku apps don't upload immediatly, so you we'll need to reload the page\
-Deployed - https://uptrade-todolist.herokuapp.com
+Warning! Sometimes heroku apps don't upload immediatly, so you'll need to reload the page
+
+Deployed - https://uptrade-to-do-list.herokuapp.com
 
 Server - https://github.com/miliereya/uptrade-server
 
