@@ -1,4 +1,4 @@
-# Full-stack todolist
+# Full-stack todolist (test task for full-stack developer position)
 
 In this project I used React + Redux as a root for the frontend and react-dnd library for the drag and drop mechanic for the tasks. For mobiles I made "custom arrows" which allows you to move tasks directly to the chosen column. Also I used JWT authorization as a security for the users. Backend was made on Express js and as a database I used Mongo DB.
 
